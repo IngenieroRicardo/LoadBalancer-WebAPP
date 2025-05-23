@@ -40,6 +40,7 @@ services:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
       #- ./demo.com.crt:/etc/nginx/ssl/demo.com.crt
       #- ./demo.com.key:/etc/nginx/ssl/demo.com.key
+      #- ./ca_bundle.crt:/etc/nginx/ssl/ca_bundle.crt
     depends_on:
       - php-apache1
       - php-apache2
